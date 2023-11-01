@@ -1,6 +1,7 @@
 #!/bin/bash
 # CHECKPOINT_PATH=/dataset/fd5061f6/sat_pretrained/glm
-CHECKPOINT_PATH=/scratch/yerong/.cache/pyllama/glm-10b-1024
+# CHECKPOINT_PATH=/scratch/yerong/.cache/pyllama/glm-10b-1024
+CHECKPOINT_PATH=/scratch/yerong/.cache/pyllama/glm-2b
 
 source $1
 MPSIZE=1
