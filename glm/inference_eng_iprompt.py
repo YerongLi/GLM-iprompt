@@ -54,6 +54,7 @@ def main(args):
     initialize_distributed(args)
     tokenizer = get_tokenizer(args)
     # build model 
+    print(args)
     model = GLMModel(args)
     model.add_mixin('auto-regressive', CachedAutoregressiveMixin())
     if args.fp16:
