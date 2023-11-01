@@ -18,7 +18,8 @@ script_dir=$(dirname $script_path)
 
 config_json="$script_dir/ds_config.json"
 
-python -m torch.distributed.launch --nproc_per_node=$MPSIZE --master_port $MASTER_PORT inference_eng_iprompt.py \
+# python -m torch.distributed.launch --nproc_per_node=$MPSIZE --master_port $MASTER_PORT inference_eng_iprompt.py \
+python inference_eng_iprompt.py \
        --mode inference \
        --model-parallel-size $MPSIZE \
        $MODEL_ARGS \
